@@ -1,11 +1,2 @@
 #With the previous command, authorize only IP addresses from 10.0.0.0/8 to connect to your system
-iptables -N xxx # create a new chain
-iptables -A xxx --src 10.0.0.0 -j ACCEPT
-iptables -A xxx --src 10.0.0.1 -j ACCEPT
-iptables -A xxx --src 10.0.0.2 -j ACCEPT
-iptables -A xxx --src 10.0.0.3 -j ACCEPT
-iptables -A xxx --src 10.0.0.4 -j ACCEPT
-iptables -A xxx --src 10.0.0.5 -j ACCEPT
-iptables -A xxx --src 10.0.0.6 -j ACCEPT
-iptables -A xxx --src 10.0.0.7 -j ACCEPT
-iptables -A xxx --src 10.0.0.8 -j ACCEPT
+iptables -A INPUT -s 10.0.0.0/8

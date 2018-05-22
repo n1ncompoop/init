@@ -1,2 +1,2 @@
 #Find the command which gives the list of firewall rules
-iptables -L
+sudo iptables -L
